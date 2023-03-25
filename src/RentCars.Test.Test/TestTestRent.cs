@@ -4,7 +4,6 @@ using RentCars.Models;
 using RentCars.Types;
 using RentCars.Test;
 
-
 namespace RentCars.Test.Test;
 
 public class TestTestRent
@@ -77,7 +76,6 @@ public class TestTestRent
         {
             act.Should().Throw<Xunit.Sdk.XunitException>();
         }
-        
         act.Should().NotThrow<NotImplementedException>();
     }
 }

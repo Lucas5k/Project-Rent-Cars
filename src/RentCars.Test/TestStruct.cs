@@ -10,7 +10,11 @@ public class TestStruct
     [MemberData(nameof(ColorShouldHaveNameAttributeData))]
     public void ColorShouldHaveNameAttribute(Color colorEntry, string expected)
     {
-        throw new notImplementedException();
+        colorEntry.Name.Should().Be(expected);
+
+        var isString = colorEntry.Name is string;
+
+        isString.Should().Be(true);
     }
 
     public static TheoryData<Color, string> ColorShouldHaveNameAttributeData = new()
@@ -24,7 +28,11 @@ public class TestStruct
     [MemberData(nameof(ColorShouldHaveHexAttributeData))]
     public void ColorShouldHaveHexAttribute(Color colorEntry, string expected)
     {
-        throw new notImplementedException();
+        colorEntry.Hex.Should().Be(expected);
+
+        var isString = colorEntry.Hex is string;
+
+        isString.Should().Be(true);
     }
 
     public static TheoryData<Color, string> ColorShouldHaveHexAttributeData = new()
