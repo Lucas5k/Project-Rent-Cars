@@ -4,6 +4,7 @@ namespace RentCars.Test.Test;
 
 public class TestTestEnums
 {
+    [Trait("type", "unit")]
     [Trait("Category", "2 - Criar enum `BreakeType` no namespace RentCars.Types")]
     [Theory(DisplayName = "BreakeType deve ter as constantes e valores corretos")]
     [InlineData(1, "Chamber", true)]

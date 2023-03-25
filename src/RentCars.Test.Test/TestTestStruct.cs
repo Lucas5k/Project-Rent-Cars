@@ -5,7 +5,6 @@ namespace RentCars.Test.Test;
 
 public class TestTestStruct
 {
-    [Trait("type", "unit")]
     [Trait("Category", "1 - Criar uma `Struct` para as **Cores** no namespace RentCars.Types")]
     [Theory(DisplayName = "Color deve ter a propriedade Nome do tipo String")]
     [MemberData(nameof(ColorShouldHaveNameAttributeData))]

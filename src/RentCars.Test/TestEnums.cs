@@ -1,3 +1,4 @@
+using FluentAssertions;
 using RentCars.Types;
 
 namespace RentCars.Test;
@@ -10,7 +11,8 @@ public class TestEnums
     [InlineData(3, "Drum")]
     public void BreakeTypeShouldHaveCorrectValues(int valueEntry, string expected)
     {
-        throw new NotImplementedException();
+        var type = (BrakeType)valueEntry;
+        type.ToString().Should().BeEquivalentTo(expected);
     }
 
     [Theory]
