@@ -30,7 +30,6 @@ public class TestTestEnums
 }
 public class TestTestEnums2
 {
-    [Trait("type", "unit")]
     [Trait("Category", "3 - Criar enum `TractionType` no namespace RentCars.Types")]
     [Theory(DisplayName = "TractionType deve ter as constantes e valores corretos")]
     [InlineData(0, "FrontWheelDrive", true)]
@@ -62,6 +61,7 @@ public class TestTestEnums2
 }
 public class TestTestEnums3
 {
+    [Trait("type", "unit")]
     [Trait("Category", "4 - Criar enum `FuelType` no namespace RentCars.Types")]
     [Theory(DisplayName = "FuelType deve ter as constantes e valores corretos")]
     [InlineData(10, "Alcohol", true)]

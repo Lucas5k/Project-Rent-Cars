@@ -34,7 +34,8 @@ public class TestEnums
     [InlineData(60, "Hybrid")]
     public void FuelTypeShouldHaveCorrectValues(int valueEntry, string expected)
     {
-        throw new NotImplementedException();
+        var type = (FuelType)valueEntry;
+        type.ToString().Should().BeEquivalentTo(expected);
     }
 
     [Theory]
