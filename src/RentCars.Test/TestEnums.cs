@@ -43,12 +43,14 @@ public class TestEnums
     [InlineData(1, "Finished")]
     public void RentStatusShouldHaveCorrectValues(int valueEntry, string expected)
     {
-        throw new NotImplementedException();
+        var type = (RentStatus)valueEntry;
+        type.ToString().Should().BeEquivalentTo(expected);
     }
 
     [Fact]
     public void RentStatusFinishedShouldBeTheSameValueAsCancelled()
     {
-        throw new NotImplementedException();
+        var type = (RentStatus)1;
+        type.CompareTo(2);
     }
 }

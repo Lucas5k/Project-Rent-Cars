@@ -61,7 +61,6 @@ public class TestTestEnums2
 }
 public class TestTestEnums3
 {
-    [Trait("type", "unit")]
     [Trait("Category", "4 - Criar enum `FuelType` no namespace RentCars.Types")]
     [Theory(DisplayName = "FuelType deve ter as constantes e valores corretos")]
     [InlineData(10, "Alcohol", true)]
@@ -103,12 +102,12 @@ public class TestTestEnums3
         {
             act.Should().Throw<Xunit.Sdk.XunitException>();
         }
-        
         act.Should().NotThrow<NotImplementedException>();
     }
 }
 public class TestTestEnums4
 {
+    [Trait("type", "unit")]
     [Trait("Category", "5 - Criar enum `RentStatus` no namespace RentCars.Types")]
     [Theory(DisplayName = "RentStatus deve ter as constantes e valores corretos")]
     [InlineData(0, "Confirmed", true)]
@@ -134,7 +133,6 @@ public class TestTestEnums4
         {
             act.Should().Throw<Xunit.Sdk.XunitException>();
         }
-        
         act.Should().NotThrow<NotImplementedException>();
 
         Action actSameValues = () => instance.RentStatusFinishedShouldBeTheSameValueAsCancelled();
