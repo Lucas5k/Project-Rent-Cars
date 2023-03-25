@@ -4,7 +4,6 @@ namespace RentCars.Test.Test;
 
 public class TestTestEnums
 {
-    [Trait("type", "unit")]
     [Trait("Category", "2 - Criar enum `BreakeType` no namespace RentCars.Types")]
     [Theory(DisplayName = "BreakeType deve ter as constantes e valores corretos")]
     [InlineData(1, "Chamber", true)]
@@ -26,12 +25,12 @@ public class TestTestEnums
         {
             act.Should().Throw<Xunit.Sdk.XunitException>();
         }
-        
         act.Should().NotThrow<NotImplementedException>();
     }
 }
 public class TestTestEnums2
 {
+    [Trait("type", "unit")]
     [Trait("Category", "3 - Criar enum `TractionType` no namespace RentCars.Types")]
     [Theory(DisplayName = "TractionType deve ter as constantes e valores corretos")]
     [InlineData(0, "FrontWheelDrive", true)]
@@ -58,7 +57,6 @@ public class TestTestEnums2
         {
             act.Should().Throw<Xunit.Sdk.XunitException>();
         }
-        
         act.Should().NotThrow<NotImplementedException>();
     }
 }

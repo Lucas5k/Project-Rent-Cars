@@ -21,7 +21,8 @@ public class TestEnums
     [InlineData(2, "AllWheelDrive")]
     public void TractionTypeShouldHaveCorrectValues(int valueEntry, string expected)
     {
-        throw new NotImplementedException();
+        var type = (TractionType)valueEntry;
+        type.ToString().Should().BeEquivalentTo(expected);
     }
 
     [Theory]
