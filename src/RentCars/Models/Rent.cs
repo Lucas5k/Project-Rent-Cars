@@ -34,11 +34,11 @@ public class Rent
 
     public void Cancel()
     {
-        throw new NotImplementedException();
+        Status = RentStatus.Cancelled;
     }
 
     public void Finish()
     {
-        throw new NotImplementedException();
+        Status = RentStatus.Finished;
     }
 }

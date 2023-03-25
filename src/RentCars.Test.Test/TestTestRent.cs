@@ -60,7 +60,6 @@ public class TestTestRent
             false
         }
     };
-    [Trait("type", "unit")]
     [Trait("Category", "6 - Criar o construtor de `Rent` seguindo as regras de negócio")]
     [Theory(DisplayName = "O construtor de Rent deve criar um novo aluguel seguindo as regras corretamente")]
     [MemberData(nameof(RentTestData))]
