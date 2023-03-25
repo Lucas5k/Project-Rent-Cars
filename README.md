@@ -1,17 +1,12 @@
-# Projeto-Trybank
+# Project-Rent-Cars
 
 ## :memo: Descrição
-<p>O Trybank é um serviço de banco financeiro. Com objetivo de construir um banco que contenha contas. Além disso, deve criar e validar os processos de cadastro, login, saque, depósito e transferência do saldo dessas contas. Utilizei conjuntos de Try/Catch Capturando as possíveis exceções em código
-e arrays multidimensionais para fazer o armazenamento dos dados do banco e manipulá-los. E por fim usei o xunit para implementação dos testes!</p>
+<p>O Project-Rent-Cars é uma empresa de aluguel de carros e motos, o objetivo desse projeto é desenvolver um sistema para controlar o aluguel de veiculos. Nesse projeto se utiliza enums para agrupar várias constantes nomeando em um novo tipo, usando também uma das ferramentas muito utilizada e importantes na Programação Orientada a Objetos a Herança. E pra finalizar usei o Xunit para a realização dos testes!</p>
 
 ## :books: Funcionalidades
-<ol><b>Funcionalidade 1</b>: A pessoa usuária pode Cadastrar uma nova conta.</ol>
-<ol><b>Funcionalidade 2</b>: A pessoa usuária pode fazer o Login na conta.</ol>
-<ol><b>Funcionalidade 3</b>: A pessoa usuária pode fazer Logout.</ol>
-<ol><b>Funcionalidade 4</b>: A pessoa usuária pode fazer a verificação do saldo.</ol>
-<ol><b>Funcionalidade 5</b>: A pessoa usuária pode fazer depósitos.</ol>
-<ol><b>Funcionalidade 6</b>: A pessoa usuária pode fazer saques.</ol>
-<ol><b>Funcionalidade 7</b>: A pessoa usuária pode fazer Transferências.</ol>
+<ol><b>Funcionalidade 1</b>: Ter a possibilidade de cancelar um aluguel.</ol>
+<ol><b>Funcionalidade 2</b>: Ter a possibilidade de finalizar um aluguel.</ol>
+<ol><b>Funcionalidade 3</b>: Ter a possibilidade de confirmar um aluguel.</ol>
 
 ## <h3>:wrench: Tecnologias utilizadas</h3>
 * C# Sharp
