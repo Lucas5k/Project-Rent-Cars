@@ -107,7 +107,6 @@ public class TestTestEnums3
 }
 public class TestTestEnums4
 {
-    [Trait("type", "unit")]
     [Trait("Category", "5 - Criar enum `RentStatus` no namespace RentCars.Types")]
     [Theory(DisplayName = "RentStatus deve ter as constantes e valores corretos")]
     [InlineData(0, "Confirmed", true)]

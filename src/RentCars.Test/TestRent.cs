@@ -23,7 +23,7 @@ public class TestRent
                 FrontBrake = BrakeType.Chamber,
                 RearBrake = BrakeType.Chamber,
                 PricePerDay = 70.0
-            }, 
+            },
             new PhysicalPerson()
             {
                 Name = "joãozinho",
@@ -34,13 +34,14 @@ public class TestRent
             },
             10,
             700.0};
-        
     }
 
     [Theory(DisplayName = "Deve cadastrar contas com sucesso!")]
     [MemberData(nameof(RentTestData))]
     public void TestCreateRent(Vehicle vehicle, Person person, int daysRented, double expectedPrice)
     {
-        throw new NotImplementedException();
+        var instace = new Rent(vehicle, person, daysRented);
+
+        instace.Price.Should().Be(expectedPrice);
     }
 }

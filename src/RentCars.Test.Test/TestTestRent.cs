@@ -22,7 +22,7 @@ public class TestTestRent
                 FrontBrake = BrakeType.Chamber,
                 RearBrake = BrakeType.Chamber,
                 PricePerDay = 70.0
-            }, 
+            },
             new PhysicalPerson(){
                 Name = "joãozinho",
                 Email = "joao@gmail.com",
@@ -46,7 +46,7 @@ public class TestTestRent
                 FrontBrake = BrakeType.Chamber,
                 RearBrake = BrakeType.Chamber,
                 PricePerDay = 70.0
-            }, 
+            },
             new LegalPerson(){
                 Name = "joãozinho s.a.",
                 SocialReason = "Empresa do Jão",
@@ -60,7 +60,7 @@ public class TestTestRent
             false
         }
     };
-
+    [Trait("type", "unit")]
     [Trait("Category", "6 - Criar o construtor de `Rent` seguindo as regras de negócio")]
     [Theory(DisplayName = "O construtor de Rent deve criar um novo aluguel seguindo as regras corretamente")]
     [MemberData(nameof(RentTestData))]
